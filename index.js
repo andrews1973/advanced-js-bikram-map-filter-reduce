@@ -131,7 +131,7 @@ foodList2.filter((food) => {
 /*
     Dado el array inventory, devolver un array con los nombres de los elementos que valgan más de 300 euros.
 
-
+*/
 const inventory = [
   {
     name: 'Mobile phone',
@@ -150,10 +150,13 @@ const inventory = [
     price: 1
   }
 ];
-
 /*
   [
     'TV Samsung',
     'Viaje a Cancún'
   ]
 */
+const result6 = []
+inventory.foreach ((producto)=>{
+  if (producto.price > 300) result6.push(producto.name)
+})
